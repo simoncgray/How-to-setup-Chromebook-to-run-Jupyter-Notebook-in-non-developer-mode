@@ -1,0 +1,24 @@
+	1. Move standard Chrome into a separate folder
+	2. Install alternative browser (e.g.  "Google Chrome Browser")
+	3. Install "Termux"
+	4. Open Termux and enter the following commands:
+		a. apt update
+		b. pip install --upgrade setuptools
+		c. apt install clang pkg-config python python-dev freetype freetype-dev libzmq libzmq-dev fftw libpng libpng-dev
+		d. apt install libcrypt libcrypt-dev
+		e. LDFLAGS=" -lm -lcompiler_rt" pip3 install numpy
+		f. LDFLAGS=" -lm -lcompiler_rt" pip3 install pandas
+		g. LDFLAGS=" -lm -lcompiler_rt" pip3 install matplotlib
+		h. LDFLAGS=" -lm -lcompiler_rt" pip3 install jupyter
+		i. LDFLAGS=" -lm -lcompiler_rt" pip3 install requests
+		j. LDFLAGS=" -lm -lcompiler_rt" pip3 install requests-oauthlib
+		k. apt install libjpeg-turbo libjpeg-turbo-dev
+		l. LDFLAGS=" -lm -lcompiler_rt" pip3 install Pillow
+	5. jupyter notebooks
+		a. Open the alternative browser and use the webaddress (URL) provided as output following the above command (http://localhost:8888/ ) etc.
+		b. You only need to use this the first time.
+
+NOTE: Other modules may need to be installed depending on the options used in Python - use "pkg list-all" to see the list of packages - these can be installed using "apt install" from a command prompt.
+
+apt update
+pkg update
